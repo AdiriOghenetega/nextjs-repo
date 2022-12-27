@@ -38,7 +38,7 @@ export async function getStaticProps(context){
 
     console.log(context)
 
-    const response = await fetch(`http://localhost:4000/users/${params.userId}`)
+    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`)
     const data = await response.json()
 
     if(!data.id){
